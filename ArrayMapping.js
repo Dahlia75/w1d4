@@ -3,8 +3,12 @@ var input = [
   { x: 12, y: 5 },
   { x: 8, y: 15 }
 ];
-var result = input.map(/* Your code here */);
 
+var result = input.map(PythagoreanTheorem);
+
+function PythagoreanTheorem(numArr){
+  return Math.sqrt(Math.pow(numArr.x,2) + Math.pow(numArr.y,2));
+}
 console.log(result[0] === 5);
 console.log(result[1] === 13);
 console.log(result[2] === 17);
